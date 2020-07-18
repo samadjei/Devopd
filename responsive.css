@@ -1,95 +1,85 @@
 /* Media Queries */
 /* affects the content when the device's width is less than or equal to 769px */
 @media (min-width: 768px) {
+	.main-header,
+	.main-nav {
+		display: flex;
+	}
 
-  .main-header,
-  .main-nav {
-    display: flex;
-  }
+	#contact {
+		max-width: 550px;
+	}
 
-  #contact {
-    max-width: 550px;
-  }
-
-  .main-header {
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1150px;
-  }
-
-  #slider .title {
-    width: 60%;
-  }
-
-  #slider .title h1 {
-    font-size: 2.75rem;
-  }
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
 }
 
 /* affects the content when the device's width is less than or equal to 1025px */
 @media (min-width: 1025px) {
-  .main-header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
 /* *Mobile First */
 @media (max-width: 500px) {
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
 
-  .main-header {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1150px;
-  }
+	#slider .title {
+		width: 80%;
+	}
 
-  #slider .title {
-    width: 80%;
-  }
+	#slider .title h1 {
+		font-size: 2.5rem;
+	}
 
-  #slider .title h1 {
-    font-size: 2.5rem;
-  }
+	#slider .title .cta {
+		padding: 0.75rem 1rem;
+		font-size: 1rem;
+	}
 
-  #slider .title .cta {
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-  }
+	.col {
+		padding: 2rem;
+		font-size: 1.25rem;
+	}
 
-  .col {
-    padding: 2rem;
-    font-size: 1.25rem;
-  }
+	.col-3 {
+		display: none;
+	}
 
-  .col-3 {
-    display: none;
-  }
+	.read {
+		padding: 6px 13px;
+	}
 
-  .read {
-    padding: 6px 13px;
-  }
+	#offers .items:nth-last-child(2n) {
+		display: none;
+	}
 
-  #offers .items:nth-last-child(2n) {
-    display: none;
-  }
+	#who-we-are .cols:nth-last-child(1n) {
+		display: none;
+	}
 
-  #who-we-are .cols:nth-last-child(1n) {
-    display: none;
-  }
+	#dark-sec .column {
+		padding: 0.5rem;
+	}
 
-  #dark-sec .column {
-    padding: 0.5rem;
-  }
+	#dark-sec .column:nth-child(2n) {
+		display: none;
+	}
 
-  #dark-sec .column:nth-child(2n) {
-    display: none;
-  }
-
-  #our-services .main .col-9:nth-last-child(2n) {
-    display: none;
-  }
+	#our-services .main .col-9:nth-last-child(2n) {
+		display: none;
+	}
 }
